@@ -17,9 +17,10 @@ body {
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: -0.02em;
-  color: black; }
+  color: black;
+  margin-top: -2em; }
 
 ::selection {
   color: white;
@@ -39,12 +40,13 @@ body {
   color: black;
   font-family: "News Cycle", Impact, sans-serif;
   line-height: 0.9em;
-  letter-spacing: 0.02em;
   text-transform: none;
-  text-shadow: none; }
+  text-shadow: none;
+  font-weight: 100;
+  font-size: 42px; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  text-shadow: none; }
 
 /*********************************************
  * LINKS

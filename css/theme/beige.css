@@ -25,11 +25,12 @@ body {
   background-color: #f7f3de; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: -0.02em;
-  color: #333333; }
+  color: #333333;
+  margin-top: -2em; }
 
 ::selection {
   color: white;
@@ -47,11 +48,12 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333333;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 0.9em;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
-  text-shadow: none; }
+  text-shadow: none;
+  font-weight: 100;
+  font-size: 42px; }
 
 .reveal h1 {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }

@@ -12,9 +12,10 @@ body {
 .reveal {
 	font-family: $mainFont;
 	font-size: $mainFontSize;
-	font-weight: normal;
+	font-weight: 100;
 	letter-spacing: -0.02em;
 	color: $mainColor;
+	margin-top: -2em;
 }
 
 ::selection {
@@ -38,10 +39,12 @@ body {
 
 	font-family: $headingFont;
 	line-height: $headingLineHeight;
-	letter-spacing: $headingLetterSpacing;
-
+	
 	text-transform: $headingTextTransform;
 	text-shadow: $headingTextShadow;
+	font-weight: 100;
+	font-size: 42px;
+	
 }
 
 .reveal h1 {
@@ -166,5 +169,3 @@ body {
 .reveal .slide-number {
   color: $linkColor;
 }
-
-
