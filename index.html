@@ -214,8 +214,6 @@
 					
 			</section>
 
-
-
 			<section>
 					<br>
 					<h3>1.3 ¿Qué es GIT? </h3>
@@ -223,7 +221,6 @@
 					<img src="img/mundos.png">
 					
 			</section>			
-
 
 			<section>
 					<br>
@@ -1622,44 +1619,148 @@
 				<img style="width:50%" src="http://l4c.me/fullsize/stagingarea-1414895989.png">
 			</section>
 
-
 			<section>
 				<br>
 				<img style="width:70%" src="http://l4c.me/fullsize/repositorio-1414897510.png">
 			</section>
 
+			<section>
+				1.4 Instalación
+			</section>
 
 			<section>
-				Instalación
+					<br>
+					1.5 Configuración
+					<br>
+					<br>
+					<p>Abrir terminal, consola, bash</p>
+					 <pre><code data-trim>
+						$ git --version
+					</code></pre>
+					<pre><code data-trim>
+					$ git config --global user.name "TU NOMBRE"
+					</code></pre>
+					<pre><code data-trim>
+					$ git config --global user.email "TU CORREO DE GITHUB"
+					</code></pre>
+					<pre><code data-trim>
+					$ git config --global --list
+					</code></pre>
+					<pre><code data-trim>
+					$ git help [comando a buscar]
+					</code></pre>
+			</section>
+
+			<section>
 				<br>
-					<p>a) Entren a <a href="http://git-scm.com" target="_blank">http://git-scm.com</a></p>
-					<p>b) Escoja dependiendo de Windows, Mac, Linux</p>
+				1.6 Git Workflow - Iteración Básica
+				<br>
+				<br>
+				<img style="width: 37%;" src="http://i.imgur.com/GtWs7xv.png">
+			</section>
+
+			<section>
+				<br>
+				Iteración básica
+				<br>
+				<br>
+				<pre><code data-trim>
+				$ git add [file or directory]
+				</code></pre>
+				<pre><code data-trim>
+				$ git commit -m "[Mensaje]""
+				</code></pre>
+				<pre><code data-trim>
+				$ git status
+				</code></pre>
+			</section>
+
+			<section>
+				1.7 Navegación
+				<br>
+				<br>
+				Para conocer todo el historial de un proyecto, utilizamos:
+				<br>
+				<br>
+				<pre><code data-trim>
+				$ git log
+				</code></pre>
 			</section>
 
 
 			<section>
-				Configuración
+				<br>
+				Analizando un commit
+				<img src="http://i.imgur.com/vR4pTeQ.png">
 			</section>
 
 			<section>
-				Navegación
+				<br>
+				Analizando un commit
+				<img src="http://i.imgur.com/EXbbFSt.png">
 			</section>
 
 			<section>
-				Reset
+				<br>
+				Analizando un commit
+				<img src="http://i.imgur.com/UEaeJH5.png">
+			</section>
+
+			<section>
+				<br>
+				Analizando un commit
+				<img src="http://i.imgur.com/lxsgl2l.png">
 			</section>
 
 
+
+			<section>
+				<br>
+				1.8 Reset
+				<br>	
+				<br>
+				Soft: No hay cambios en Staging Area ni en Working Directory.
+				<br>
+				<br>
+				<pre><code data-trim>
+				$ git reset --soft [SHA commit]
+				</code></pre>
+			</section>
+
+			<section>
+				<br>
+				1.8 Reset
+				<br>	
+				<br>
+				Mixed: Staging Area = Repository. Nada con Working Directory. 
+				<br>
+				<br>
+				<pre><code data-trim>
+				$ git reset --mixed [SHA commit]
+				</code></pre>
+			</section>
+
+			<section>
+				<br>
+				1.8 Reset
+				<br>	
+				<br>
+				Hard: Working Directory + Staging Area = Repository
+				<br>
+				<br>
+				<pre><code data-trim>
+				$ git reset --hard [SHA commit]
+				</code></pre>
+			</section>
 
 <!-- Segunda clase -->
-
 
 			<section>
 					<img src="https://octodex.github.com/images/defunktocat.png" style="width: 310px;margin-top: 105px;box-shadow: none;border: none;">
 					<br>
 					<br>
 					<h1 style="font-size:31px">Curso Profesional de Git y GitHub</h1><br>
-					<p>Fusiones. Proyecto de Marca Personal.</p>
+					<p>Proyecto de Marca Personal.</p>
 			</section>	
 
 				<section>
