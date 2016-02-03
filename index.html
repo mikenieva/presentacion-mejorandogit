@@ -1672,25 +1672,6 @@
 			</section>
 
 			<section>
-				1.7 Navegación
-				<br>
-				<br>
-				Para conocer todo el historial de un proyecto, utilizamos:
-				<br>
-				<br>
-				<pre><code data-trim>
-				$ git log
-				</code></pre>
-				<pre><code data-trime>
-				$ git config --global alias.[su palabra] "[comando]"
-				</code></pre>
-				<pre><code data-trime>
-				git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-				</code></pre>
-			</section>
-
-
-			<section>
 				<br>
 				Analizando un commit
 				<img src="http://i.imgur.com/vR4pTeQ.png">
@@ -1714,18 +1695,34 @@
 				<img src="http://i.imgur.com/lxsgl2l.png">
 			</section>
 
-
+			<section>
+				1.7 Navegación
+				<br>
+				<br>
+				Para conocer todo el historial de un proyecto, utilizamos:
+				<br>
+				<br>
+				<pre><code data-trim>
+				$ git log
+				</code></pre>
+				<pre><code data-trime>
+				$ git config --global alias.[su palabra] "[comando]"
+				</code></pre>
+				<pre><code data-trime>
+				git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+				</code></pre>
+			</section>
 
 			<section>
 				<br>
 				1.8 Reset
 				<br>
 				<br>
-				Soft: Cambios sólo en el "Repository". Staging = Working
+				Hard: Working Directory = Staging Area = Repository
 				<br>
 				<br>
 				<pre><code data-trim>
-				$ git reset --soft [SHA commit]
+				$ git reset --hard [SHA commit]
 				</code></pre>
 			</section>
 
@@ -1747,11 +1744,11 @@
 				1.8 Reset
 				<br>
 				<br>
-				Hard: Working Directory = Staging Area = Repository
+				Soft: Cambios sólo en el "Repository". Staging = Working
 				<br>
 				<br>
 				<pre><code data-trim>
-				$ git reset --hard [SHA commit]
+				$ git reset --soft [SHA commit]
 				</code></pre>
 			</section>
 
@@ -1765,13 +1762,11 @@
 					<p>Proyecto de Marca Personal.</p>
 			</section>
 
-
 				<section>
 					<br>
 					<h3>Roadmap</h3>
 					<img src="http://i.imgur.com/H7RtRKJ.png">
 				</section>
-
 
 			<section>
 			<h3>[En vivo]</h3>
