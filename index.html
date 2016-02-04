@@ -2091,12 +2091,8 @@ Si necesitamos regresar a la rama principal, utilizamos:
 					<br>
 					<br>
 					<h1 style="font-size:31px">Curso Profesional de Git y GitHub</h1><br>
-					<p>Proyecto de Marca Empresarial</p>
+					<p>Workflows</p>
 			</section>
-
-				<section>
-					<p>Enfócate en lo importante. <br><br>Lo demás, automatízalo lo más que puedas.</p>
-				</section>
 
 				<section>
 					<br>
@@ -2121,18 +2117,444 @@ Si necesitamos regresar a la rama principal, utilizamos:
 					<br>
 					<h3>Temario</h3>
 					<br>
-					<p>Metas</p>
-					<p>Roles</p>
-					<p>Project Management</p>
-					<p>GitHub</p>
-					<p>Creación de usuarios</p>
-					<p>Workflows</p>
-					<p>Amazon Web Services</p>
-					<p>Deployment</p>
-					<br>
+					<p>Wokflows</p>
+					<p>Repositorios personales</p>
+					<p>Repositorios "Forked"</p>
+					<p>GitHub Pages</p>
 			</section>
-		</div>
-	</div>
+
+
+
+	<section>
+		<br>
+		<h3>Workflows</h3>
+		<br>
+		<p>Flujos de trabajo colaborativos.</p>
+
+
+	</section>
+
+	<section>
+		<br>
+		<h3>Workflows</h3>
+		<br>
+		<p>¿Cómo logramos que varios profesionales trabajen sobre un proyecto de código sin matarse?</p>
+	</section>
+
+	<section>
+		<br>
+		Workflows
+		<br>
+		<br>
+		<img style="width:50%" src="http://l4c.me/fullsize/github2-1417397149.png">
+	</section>
+
+
+
+
+	<section>
+		<br>
+		<h3>¿Qué es GitHub?</h3>
+		<br>
+		<p>Plataforma en la cual desarrolladores suben sus proyectos de código, con el objetivo de mejorarlos a través de la colaboración y gestión.</p>
+	</section>
+
+	<section>
+		<br>
+		<h3>¿Qué es GitHub?</h3>
+		<br>
+		<p>Es un servicio de “hosting" de repositorios, a través de una interfaz web gráfica.</p>
+	</section>
+
+	<section>
+		<br>
+		<br>
+		GitHub funciona en 2 bases:
+		<br>
+		<br>
+		- Exploración (Clone)
+		<br>
+		- Colaboración
+	</section>
+
+	<section>
+		<br>
+		GitHub - Exploración (Clone)
+		<br>
+		<br>
+		<p>Descargar un proyecto con el objetivo de utilizarlo sin pensar en colaborar.</p>
+	</section>
+
+	<section>
+		<br>
+		GitHub - Exploración (Clone)
+		<br>
+		<br>
+		<pre>
+			<code>
+				git clone [repositorio vía SSH ó HTTPS]
+			</code>
+		</pre>
+	</section>
+
+	<section>
+		<br>
+		GitHub - Exploración (Clone)
+		<br>
+		<br>
+		<img src="http://l4c.me/fullsize/clone1-1417412762.png" alt="" />
+	</section>
+
+	<section>
+		<br>
+		GitHub - Exploración (Clone)
+		<br>
+		<br>
+		<img src="http://l4c.me/fullsize/clone2-1417412777.png" alt="" />
+	</section>
+
+	<section>
+		<br>
+		GitHub - Exploración (Clone)
+		<br>
+		<br>
+		<img src="http://l4c.me/fullsize/clone3-1417412868.png" alt="" />
+	</section>
+
+
+	<section>
+		<br>
+		GitHub - Colaboración (Workflows)
+		<br>
+		<br>
+		<p><b>a) Proyectos creados por ti - Repositorios personales.</b></p>
+		<br>
+		<br>
+		- Eres propietario del proyecto.
+		<br>
+		- Personas alrededor proponen y tú decides si aceptar ó no.
+		<br>
+		- Proyectos personales, generalmente.
+	</section>
+
+
+	<section>
+		<br>
+		<b>Conectarnos con GitHub</b>
+		<br>
+		<br>
+		1. Crear usuario.
+		<br>
+		2. Crear repositorio.
+		<br>
+		3. Conectar con llave SSH a GitHub, desde tu área local.
+		<br>
+		<br>
+		<pre>
+			<code>
+				$ ssh-keygen -t rsa -b 4096 -C "[email de GitHub]"
+
+				Dar enter. Aceptar la localización por defecto.
+
+				Contraseña.
+
+				$ cd  ~/.ssh
+
+				$ cat id_rsa.pub
+
+				Copiamos la llave y la pegamos en Settings > SSH, dentro de GitHub.
+			</code>
+		</pre>
+
+	</section>
+
+	<section>
+		<br>
+		<b>Conectarnos con GitHub</b>
+		<br>
+		<br>
+		4. Iteración básica en tu área local y subir a GitHub:
+		<br>
+		<br>
+		<pre>
+			<code>
+				$ git init
+
+				$ git remote add origin [SSH]
+
+				$ git remote -v
+
+
+				$ git commit -am "[Mensaje]"
+
+				$ git push origin master
+			</code>
+		</pre>
+	</section>
+
+<section>
+<img src="http://l4c.me/fullsize/repospropios1-1417410698.png" alt="" />
+</section>
+<section>
+<img src="http://l4c.me/fullsize/repospropios2-1417410717.png" alt="" />
+</section>
+<section>
+<img src="http://l4c.me/fullsize/repospropios3-1417410732.png" alt="" />
+</section>
+<section>
+<img src="http://l4c.me/fullsize/repospropios4-1417410756.png" alt="" />
+</section>
+<section>
+<img src="http://l4c.me/fullsize/repospropios5-1417410777.png" alt="" />
+</section>
+<section>
+<img src="http://l4c.me/fullsize/repospropios6-1417410793.png" alt="" />
+</section>
+
+<section>
+<br><br>
+	GitHub - Colaboración (Workflows)
+<br><br>
+	<b>b) Proyectos creados por tu organización ó equipos.</b>
+<br>
+<br>
+	- Son propietarios del proyecto.
+	<br>
+	- Todos suben cambios, sin pedir permisos.
+	<br>
+	- Siempre verificar cambios nuevos antes de subir propios.
+
+</section>
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios1-1417471255.png" alt="" />
+</section>
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios2-1417471273.png" alt="" />
+</section>
+
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios3-1417471286.png" alt="" />
+</section>
+
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios4-1417471304.png" alt="" />
+</section>
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios5-1417471320.png" alt="" />
+</section>
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios6-1417471356.png" alt="" />
+</section>
+
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios7-1417471379.png" alt="" />
+</section>
+
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios8-1417471393.png" alt="" />
+</section>
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios9-1417471413.png" alt="" />
+</section>
+
+<section>
+	<br>
+	Git Fetch + Git Merge
+	<img src="http://l4c.me/fullsize/propios10-1417471425.png" alt="" />
+</section>
+
+<section>
+<br>
+<br>
+	<b>Git Fetch + Git Merge</b>
+<br>
+<br>
+	<pre>
+		<code>
+	$ git remote add origin [SSH]
+	$ git fetch origin
+	$ git merge origin/master
+
+	** Desarrollamos **
+
+	$ git fetch origin
+	$ git merge origin/master
+
+	$ git push origin master
+
+</code>
+</pre>
+
+</section>
+
+<section>
+	<br>
+	<br>
+	GitHub - Colaboración (Workflows)
+<br>
+<br>
+	<b>c) Proyectos de terceros. (Repositorios “forked”)</b>
+<br>
+<br>
+<br>
+	- No son dueños, pero quieren colaborar en el desarrollo.
+	<br>
+	- Los propietarios aceptan y rechazan propuestas a través de “Pull Request”.
+
+
+</section>
+
+
+<section>
+	<br>
+	<br>
+	GitHub - Colaboración (Workflows)
+<br>
+<br>
+	<b>c) Proyectos de terceros. (Repositorios “forked”)</b>
+<br>
+<br>
+<br>
+	Existirán 2 repositorios:
+	<br>
+	<br>
+	a) El repositorio original.
+	<br>
+	b) El repositorio forked (La réplica del original, en tu cuenta de GitHub).
+
+
+
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<br>
+	<br>
+	<img src="http://l4c.me/fullsize/final1-1417476172.png" alt="" />
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<br>
+	<br>
+	<img src="http://l4c.me/fullsize/final2-1417476190.png" alt="" />
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<br>
+	<br>
+	<img src="http://l4c.me/fullsize/final3-1417476208.png" alt="" />
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<img src="http://l4c.me/fullsize/final4-1417476231.png" alt="" />
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<br>
+	<br>
+	<img src="http://l4c.me/fullsize/final6-1417476260.png" alt="" />
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<br>
+	<br>
+	<img src="http://l4c.me/fullsize/final7-1417476276.png" alt="" />
+</section>
+
+<section>
+	<br>
+	<br>
+	c) Proyectos de terceros. (Repositorios “forked”)
+	<br>
+	<br>
+	<img src="http://l4c.me/fullsize/final8-1417476301.png" alt="" />
+</section>
+
+<section>
+<br>
+<br>
+<b>Proceso de repositorios “Forked"</b>
+<br>
+<br>
+	- Actualizarnos siempre con el repositorio principal, antes de comenzar.
+	<br>
+- Desarrollar y, antes de subir a nuestro repositorio “forked”, revisar nuevamente cambios.
+<br>
+- Subir a nuestro repositorio “forked” todo lo que hemos hecho.
+<br>
+- Ejecutar un “Pull Request"
+</section>
+
+<section>
+<br>
+<br>
+<b>Proceso de repositorios “Forked"</b>
+<br>
+<br>
+<pre>
+	<code>
+	Crear ó entrar a la carpeta del proyecto
+	$ git remote add origin [HTTPS ó SSH del proyecto forked]
+	$ git remote add upstream [HTTPS ó SSH del proyecto principal]
+	$ git fetch upstream
+	$ git merge origin/upstream
+	$ git fetch origin
+	$ git merge origin/master
+	Hacer cambios en local
+	$ git fetch upstream
+	$ git merge origin/upstream
+	$ git push origin master
+	</code>
+</pre>
+</section>
+
+
+</div>
+</div>
 
 
 
