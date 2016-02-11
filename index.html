@@ -2648,8 +2648,6 @@ Si necesitamos regresar a la rama principal, utilizamos:
 				GitHub cuenta con un gestor para proyectos.
 			</section>
 
-
-
 			<section>
 					<img src="https://octodex.github.com/images/steroidtocat.png" style="width: 310px;margin-top: 105px;box-shadow: none;border: none;">
 					<br>
@@ -2723,6 +2721,226 @@ Si necesitamos regresar a la rama principal, utilizamos:
 			</section>
 
 
+
+
+			<section>
+					<img src="https://octodex.github.com/images/steroidtocat.png" style="width: 310px;margin-top: 105px;box-shadow: none;border: none;">
+					<br>
+					<br>
+					<h1 style="font-size:31px">Curso Profesional de Git y GitHub</h1><br>
+					<p>Workflow con equipos</p>
+			</section>
+
+				<section>
+					<br>
+					<h3>Roadmap</h3>
+					<img src="http://i.imgur.com/H7RtRKJ.png">
+				</section>
+
+			<section>
+			<h3>[En vivo]</h3>
+					<br>
+					<p>Preguntas a <a href="http://twitter.com/#platzigit" target="_blank">#platzigit</a></p>
+					<br>
+					<br>
+					<br>
+					<h3>[Diferido]</h3>
+					<br>
+					<p>Al sistema de discusiones, comentarios ó un Tweet en @mikenieva.</p>
+			</section>
+
+			<section>
+					<br>
+					<br>
+					<h3>Ejercicio</h3>
+					<br>
+					<br>
+					Creación de multiusuarios en local
+					<br>
+					Repositorios propios con Push
+					<br>
+					Repositorios forked con Pull Requests
+					<br>
+					Deploy en Amazon Web Services
+			</section>
+
+
+			<section>
+					<br>
+					<h3>Creación de multiusuarios en local</h3>
+					<br>
+					<p>
+						Llaves
+					</p>
+					<br>
+					<pre>
+						<code>
+							$ cd ~/.ssh
+							$ ssh-keygen -t rsa -C "cuenta1@hola.com"
+							# Este será id_rsa
+							$ ssh-keygen -t rsa -C "cuenta2@hola.com"
+							# Este será mikecolombiano
+						</code>
+					</pre>
+					<br>
+
+			</section>
+
+			<section>
+					<br>
+					<br>
+					<h3>Creación de multiusuarios en local</h3>
+					<br>
+					<p>
+						Agregar llaves a la cuenta de GitHub
+					</p>
+					<br>
+					<pre>
+						<code>
+							$ cd ~/.ssh
+							$ cat id_rsa
+							# Insertamos en cuenta 1
+
+							$ cat mikecolombiano
+							# Insertamos en cuenta 2
+						</code>
+					</pre>
+					<br>
+				</section>
+
+				<section>
+						<br>
+						<br>
+						<h3>Creación de multiusuarios en local</h3>
+						<br>
+						<p>
+							Archivo config en local
+						</p>
+						<br>
+						<pre>
+							<code>
+								$ cd ~/.ssh
+								$ touch config
+								$ vim config
+
+								# githubCuenta1
+								Host cuenta1
+   								HostName github.com
+   								User git
+   								IdentityFile ~/.ssh/id_rsa
+
+								# githubCuenta2
+								Host cuenta2
+   								HostName github.com
+   								User git
+   								IdentityFile ~/.ssh/mikecolombiano
+							</code>
+						</pre>
+						<br>
+					</section>
+
+
+					<section>
+							<br>
+							<br>
+							<h3>Creación de multiusuarios en local</h3>
+							<br>
+							<p>
+								Probamos las llaves
+							</p>
+							<br>
+							<pre>
+								<code>
+									Borramos llaves de caché
+									$ ssh-add -D
+
+									Agregamos nuevas llaves
+									$ ssh-add id_rsa
+									$ ssh-add mikecolombiano
+
+									Hacemos test de que funcionen las llaves
+									$ ssh -T cuenta1
+									$ ssh -T cuenta2
+								</code>
+							</pre>
+							<br>
+						</section>
+
+						<section>
+								<br>
+								<br>
+								<h3>Creación de multiusuarios en local</h3>
+								<br>
+								<p>
+									Verificamos las cuentas
+								</p>
+								<pre>
+									<code>
+									Creamos carpeta mikenieva
+									Creamos carpeta mikecolombiano
+									Los conectamos remotamente
+
+									Cuenta 1
+									$ git remote add origin git@cuenta1:universidadplatzi/blog-universidad.git
+
+									Cuenta 2
+									$ git remote add origin git@cuenta2:universidadplatzi/blog-universidad.git
+
+									En ambos, ejecutamos.
+									$ git pull origin master
+									</code>
+								</pre>
+								<br>
+							</section>
+
+
+							<section>
+									<br>
+									<br>
+									<h3>Push de ambos owners</h3>
+									<br>
+									<p>
+										Verificamos las cuentas
+									</p>
+									<pre>
+										<code>
+										Creamos carpeta mikenieva
+										Creamos carpeta mikecolombiano
+										Los conectamos remotamente
+
+										Cuenta 1
+										$ git remote add origin git@cuenta1:universidadplatzi/blog-universidad.git
+
+										Cuenta 2
+										$ git remote add origin git@cuenta2:universidadplatzi/blog-universidad.git
+
+										En ambos, ejecutamos.
+										$ git pull origin master
+										</code>
+									</pre>
+									<br>
+								</section>
+
+								<section>
+										<br>
+										<br>
+										<h3>Push de ambos owners</h3>
+										<br>
+									</section>
+
+									<section>
+											<br>
+											<br>
+											<h3>Pull Request</h3>
+											<br>
+										</section>
+
+										<section>
+												<br>
+												<br>
+												<h3>Deployment</h3>
+												<br>
+											</section>
 
 
 </div>
