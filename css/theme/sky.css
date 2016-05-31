@@ -27,7 +27,7 @@ body {
   font-weight: 100;
   letter-spacing: -0.02em;
   color: #333333;
-  margin-top: -2em; }
+  margin-top: 0em; }
 
 ::selection {
   color: white;
